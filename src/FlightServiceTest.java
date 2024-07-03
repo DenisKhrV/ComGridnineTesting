@@ -1,14 +1,13 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 
 class FlightServiceTest {
-    List<Flight> flightList = FlightBuilder.createFlights();
+    List<Flight> flightList = new ArrayList<>();
+    List<Flight> flightList1= FlightBuilder.createFlights();
 
 
     @BeforeEach
@@ -27,17 +26,17 @@ class FlightServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void departureBeforeCurrentTime() {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void segmentsWithArrivalDateEarlierThanDepartureDate() {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void flightsWithTotalGroundTimeMoreThanTwoHours() {
     }
 
